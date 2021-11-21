@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-
     <title>Html Layout</title>
 </head>
 <body>
-    <div class="tb">
-
-        <div id="topbar" class="topbars">
+    <div class="contacts">
         <li><a href="#">Phone: +1 (234) 567-890</a></li>
         <li><a href="#">Email: contact@inspiro-media.com</a></li>
         </ul>
         </div>
-        <div class="sm">
+        
         <div class="social-media">
         <ul>
         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -32,6 +29,7 @@
         </ul>
         </div>
         <header>
+            <nav>
             <div class="logo">
                 <a href="index.html"><h1>Polo</h1></a>
             </div>  
@@ -742,15 +740,68 @@
                                     <li><a href="#">Facebook Comments</a></li>
                                 </ul>
                              </div>
-                    </div>
-                </li>
-                <li><a href="#">Shop</a></li>
-            </ul>
-                
-           
-        </nav>
+                             <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="fas fa-search"></i>
+                                <form class="search-form" action="search-results-page.html" method="get">
+                                <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+                                <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+                                </form>
+                                </div> 
+                                <div class="lng">
+                                    <a href="#" class="globus"><i class="fas fa-globe"></i><span>EN</span></a>
+                                    <ul>
+                                        <li>French</li>
+                                        <li>Spanish</li>
+                                        <li>English</li>
+                                    </ul>
+                                </div>
+            </nav>  
         </header>
-        
+        <div class="big-words">
+            <h2>5 star Hotel</h2>
+            <h1>Wonderful</h1>   
+            <h1>Feelings</h1>
+            </div>
+         <div class="tables">
+             <table>
+                 <form action="">
+                 <tr>
+                     <th>Check in</th>
+                     <th>Check out</th>
+                 </tr>
+                 <tr>
+                     <td>
+                       <input type="datetime-local" name="check" id="check">
+                       <input type="datetime-local" name="checkout" id="checkout">
+                     </td>
+                 </tr>
+                 <tr>
+                    <th>Adults</th>
+                    <th>Children</th>
+                    
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type="number"  name="adult" id="adult">
+                         <input type="number"  name="child" id="child">
+                     </td>
+                 </tr>
+                 <tr>
+                     <th>Room type</th>
+                 </tr>
+                 <tr>
+                     <td>
+                         <select name="room-type" id="room-type" class="form-control">
+                             <option value>Select room type</option>
+                             <option value="Single Room">Single Room</option>
+                             <option value="Double Room">Double Room</option>
+                             <option value="King double Room">King double Room</option>
+                         </select>
+                     </td>
+                 </tr>
+                
+                </form>
+             </table>
+         </div> 
     
 </body>
 </html>
